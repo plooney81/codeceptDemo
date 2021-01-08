@@ -2,7 +2,7 @@ Feature('Pair Signup and Login');
 
 Scenario('Pair Chat bad Login', ({ I }) => {
     I.amOnPage('/'); //opens the site
-    I.see('Pair'); //Checks to see if it has loaded properly
+    I.see('Home'); //Checks to see if it has loaded properly
     I.click('Signup'); //Clicks the signup link
     I.seeElement('#formBasicEmail'); //Checks to see if the right for has loaded
 
@@ -16,7 +16,7 @@ Scenario('Pair Chat bad Login', ({ I }) => {
 
 Scenario('Pair Chat Successful Login', ({ I }) => {
     I.amOnPage('/'); //opens the site
-    I.see('Pair'); //Checks to see if it has loaded properly
+    I.see('Home'); //Checks to see if it has loaded properly
     I.click('Login'); //Clicks the signup link
     I.seeElement('#formBasicEmail'); //Checks to see if the right for has loaded
 
