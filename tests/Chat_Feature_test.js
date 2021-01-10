@@ -33,6 +33,6 @@ Scenario('Click on a chat group', ({I}) => {
     I.click('.hide-side-button') //click the side button
     I.click(locate(`.addedGroupMisc`).withText('Misc')); //click on the right group to load
     I.wait(2);
-    I.fillField('.text-input', 'Testing with CodeCept'); //Type
-    I.click('.fa-paper-plane');
+    I.fillField('.text-input', 'Testing with CodeCept'); //types a message
+    I.click(locate('.fa-paper-plane')); //sends the message
 });
