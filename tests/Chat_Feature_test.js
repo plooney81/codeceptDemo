@@ -19,5 +19,6 @@ Scenario('Login and Create A New Chat Group', ({ I }) => {
     I.click('Add');
     I.wait(5);
     I.click(groupName, 'span')
+    I.fillField('.message-form', "Hello World");
     
 });
