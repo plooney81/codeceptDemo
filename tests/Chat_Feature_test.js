@@ -24,17 +24,15 @@ Scenario('Login and Create A New Chat Group', ({ I }) => {
     groupNames.forEach(groupName => {
         I.fillField('#newGroupForm', groupName); //fills in form with specified name
         I.click('Add'); //adds the group by clicking the Add button
-        I.wait(5);
-        I.click('Home');
-        I.click('Chat');
-        // I.seeElement(groupName, `.addedGroup`); //checks that the user can now see the added group
     })
-    
-    // I.fillField('.message-form', "Hello World");
-    
 });
 
-// Scenario('Click on a chat group', ({I}) => {
-//     I.amOnPage('/login');
-
-// });
+Scenario('Click on a chat group', ({I}) => {
+    login(I);
+    I.click('Chat');
+    I.click('.hide-side-button') //click the side button
+    I.click(locate(`.addedGroupMisc`).withText('Misc'));
+    I.wait(2);
+    I.fillField('.message-form', 'Testing with CodeCept');
+    I.click('.fa-paper-plane');
+});
