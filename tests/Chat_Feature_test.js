@@ -30,12 +30,12 @@ Scenario('Login and Create A New Chat Group', ({ I }) => {
     })
 });
 
-// Scenario('Click on a chat group', ({I}) => {
-//     login(I);
-//     I.click('Chat'); //navigate to the chat page
-//     I.click('.hide-side-button') //click the side button
-//     I.click(locate(`.addedGroupMisc`).withText('Misc')); //click on the right group to load
-//     I.wait(2);
-//     I.fillField('.text-input', 'Testing with CodeCept'); //types a message
-//     I.click(locate('.fa-paper-plane')); //sends the message
-// });
+Scenario('Click on a chat group', ({I}) => {
+    login(I);
+    I.click('Chat'); //navigate to the chat page
+    I.click('.hide-side-button') //click the side button
+    I.click(locate(`.addedGroupMisc`).withText('Misc')); //click on the right group to load
+    I.wait(2);
+    I.fillField('.text-input', 'Testing with CodeCept'); //types a message
+    I.click(locate('.fa-paper-plane')); //sends the message
+});
