@@ -9,7 +9,7 @@ exports.config = {
   output: './output',
   helpers: {
     Playwright: {
-      url: 'https://pair-chat.netlify.app/',
+      url: 'http://localhost:3000',
       show: true,
       browser: 'chromium'
     }
